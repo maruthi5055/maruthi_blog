@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Maruthi Pesari</title>
+    <style>
+        :root {
+            --main-color: #1976D2; /* Light Science Blue */
+            --accent-color: #26A69A; /* Teal Green */
+            --background-color: #FFFFFF; /* White */
+            --text-color: #212121; /* Charcoal Black */
+            --highlight-color: #4FC3F7; /* Sky Blue */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--main-color);
+            padding: 15px 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            background-color: var(--highlight-color);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FAFAFA;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            line-height: 1.6;
+        }
+        h2 {
+            color: var(--main-color);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: var(--main-color);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1565C0; /* Darker blue */
+        }
+        footer {
+            background-color: var(--main-color);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+        /* Profile photo styling */
+        .profile-photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+        <p>Get in touch for collaborations, consultancy, or academic discussions</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="protocols.html">Protocols</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="profile-photo">
+            <img src="profile.jpg.jpeg" alt="Maruthi Pesari" />
+        </div>
+
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Personal Email: <a href="mailto:pesari.maruthi@gmail.com">pesari.maruthi@gmail.com</a></li>
+            <li>University Email: <a href="mailto:pesari.maruthi@kakatiya.ac.in">pesari.maruthi@kakatiya.ac.in</a></li>
+            <li>GitHub: <a href="https://github.com/maruthi5055" target="_blank" rel="noopener noreferrer">github.com/maruthi5055</a></li>
+            <li>LinkedIn: 
+        </ul>
+
+        <h2>Send a Message</h2>
+        <form action="mailto:pesari.maruthi@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Maruthi Pesari | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
